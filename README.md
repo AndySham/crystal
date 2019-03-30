@@ -1,5 +1,13 @@
 # Crystal
 
+**Note**: This project is a WIP and many features have yet to be implemented. Do not use this in any production code.
+
+## Installing
+
+```
+npm i crystaljs --save
+```
+
 ## Importing to a project
 
 For node.js environments:
