@@ -91,13 +91,13 @@ const o2 = {
 ```
 A field's options object can be given several parameters.
 
-Parameter | Function | Type / Inputs | Default
-- | - | - | -
-type | Specifies a type to check for when setting this property. |  Can be `Number`, `Boolean`, `String`, `Symbol`, `Function`, or any constructor. | n/a
-primary | Specifies this field as a primary key. If multiple fields have this set to `true`, they must all be specified to retrieve this value from a `Table`. | `Boolean` | `false` 
-default | Sets a default value if the value has not been retrieved yet. | Must have the type specified in `type`. If none are specified, then any input is valid. | n/a
-errorIfMissing | Throws an error if this value ever does not exist. Often used in conjunction with primary keys. | `Boolean` | `false`
-errorIfImpossible | Throws an error if one attempts to pull the value, but is unsuccessful. | `Boolean` | `false`
+| Parameter | Function | Type / Inputs | Default |
+| - | - | - | - |
+| type | Specifies a type to check for when setting this property. |  Can be `Number`, `Boolean`, `String`, `Symbol`, `Function`, or any constructor. | n/a |
+| primary | Specifies this field as a primary key. If multiple fields have this set to `true`, they must all be specified to retrieve this value from a `Table`. | `Boolean` | `false` |
+| default | Sets a default value if the value has not been retrieved yet. | Must have the type specified in `type`. If none are specified, then any input is valid. | n/a |
+| errorIfMissing | Throws an error if this value ever does not exist. Often used in conjunction with primary keys. | `Boolean` | `false` |
+| errorIfImpossible | Throws an error if one attempts to pull the value, but is unsuccessful. | `Boolean` | `false` |
 
 ### Pulls
 
@@ -133,12 +133,12 @@ If a property `field1` does not exist, but there exists some order of pulls such
 
 Each pull has a series of parameters which can be specified. `func` and `to` must exist, but not `from`.
 
-Parameter | Function | Type | Default
-- | - | - | -
-func | A function, or series of functions, which are performed to retrieve `from`. | `Function`, or `Array<Function>` | User value is required.
-from | The properties of an object that `func` must be able to access to retrieve `to`. | `String`, or `Array<String>` | `[]`
-to | The properties of an object that are retrieved after `func` is run. | `String`, or `Array<String>` | User value is required.
-name | Specifying this value means that the pull may performed as the function `obj[name]`. | `String` | n/a
+| Parameter | Function | Type | Default |
+| - | - | - | - |
+| func | A function, or series of functions, which are performed to retrieve `from`. | `Function`, or `Array<Function>` | User value is required. |
+| from | The properties of an object that `func` must be able to access to retrieve `to`. | `String`, or `Array<String>` | `[]` |
+| to | The properties of an object that are retrieved after `func` is run. | `String`, or `Array<String>` | User value is required. |
+| name | Specifying this value means that the pull may performed as the function `obj[name]`. | `String` | n/a |
 
 ### Methods
 
